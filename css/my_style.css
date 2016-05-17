@@ -1,0 +1,80 @@
+body {
+	background: #080e22 url(http://cdn.cosmomayak.ru/content/images/background-stars.jpg) no-repeat top center; /* Цвет фона и путь к фоновому изображению */
+	color: white;  /* Цвет текста */
+}
+header {
+	text-align: left;
+}
+footer {
+	text-align: center;			
+}
+		
+#centerLayer {
+	text-align: center; /* Выравнивание по центру */
+	/* padding: 10px; /* Поля вокруг текста */
+	width: 1280px; /* Ширина слоя в пикселах */
+}
+#leftBlock {
+	position: absolute; /* Абсолютное позиционирование */
+	width: 860px; /* Ширина слоя  */
+}
+#rightBlock {
+	position: relative; /* Относительное позиционирование */
+	left: 860px; /* Смещаем слой вправо на ширину левого слоя */
+	width: 420px; /* Ширина слоя */
+}
+#lineCanvas {
+	background-color: white;
+	overflow: auto;
+	position: relative;
+	height: 340px;
+	width: 820px;
+	-moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
+	-webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
+	-khtml-border-radius: 10px; /* закругл. для браузера Konquerer системы Linux */
+	border-radius: 10px; /* закругление углов для всех, кто понимает */
+}
+#data {
+	text-align: left;
+	float: left;
+}
+#data p {
+	white-space: pre;
+}
+
+.fog {
+	color: grey;
+}
+.fog span {
+	border: 1px solid grey;
+	padding: 0 10px;
+	-moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
+	-webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
+	-khtml-border-radius: 10px; /* закругл. для браузера Konquerer системы Linux */
+	border-radius: 10px; /* закругление углов для всех, кто понимает */
+}
+.blink {
+	-moz-animation: blink 2s linear infinite;
+	-webkit-animation: blink 2s linear infinite;
+	-khtml-animation: blink 2s linear infinite;
+	animation: blink 2s linear infinite;
+	color: #FF0000;
+}
+.blink span {
+	border: 1px solid red;
+	padding: 0 10px;
+	-moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
+	-webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
+	-khtml-border-radius: 10px; /* закругл. для браузера Konquerer системы Linux */
+	border-radius: 10px; /* закругление углов для всех, кто понимает */
+}
+@-webkit-keyframes blink {
+	0% { color: #FF0000; }
+	50% { color: #8B0000; }
+	100% { color: #FF0000; }
+}
+@keyframes blink {
+	0% { color: #FF0000; }
+	50% { color: #8B0000; }
+	100% { color: #FF0000; }
+}
